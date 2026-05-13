@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938655444363353649}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.05, y: 1.176, z: 4.734368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2991927420497894951}
+  m_Father: {fileID: 8547571364241651544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1782512624850040569
 MeshFilter:
@@ -106,6 +106,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WheelRotator
   rotationSpeed: 1000
   rotationAxis: {x: 1, y: 0, z: 0}
+--- !u!1 &2977423997255161507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8547571364241651544}
+  m_Layer: 0
+  m_Name: A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8547571364241651544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2977423997255161507}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 777081188819671294}
+  - {fileID: 9133318061487650653}
+  - {fileID: 1808401841062419558}
+  - {fileID: 4922338119116249600}
+  - {fileID: 8254002928550452870}
+  m_Father: {fileID: 2991927420497894951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3132679047660951441
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,12 +168,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3132679047660951441}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.075, y: 0.4797783, z: -6.599999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2991927420497894951}
+  m_Father: {fileID: 8547571364241651544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4230296069196730436
 MeshFilter:
@@ -225,12 +261,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4788156089277130257}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.05, y: 1.176, z: -3.277265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2991927420497894951}
+  m_Father: {fileID: 8547571364241651544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6591615517104895539
 MeshFilter:
@@ -331,12 +367,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4869212435705144111}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.05, y: 1.176, z: 4.734368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2991927420497894951}
+  m_Father: {fileID: 8547571364241651544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2859801580339517024
 MeshFilter:
@@ -437,12 +473,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7105446291939533647}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.05, y: 1.176, z: -3.277265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2991927420497894951}
+  m_Father: {fileID: 8547571364241651544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3243555708482720783
 MeshFilter:
@@ -527,6 +563,7 @@ GameObject:
   - component: {fileID: 2991927420497894951}
   - component: {fileID: 653196502722665883}
   - component: {fileID: 6160675023913927555}
+  - component: {fileID: 3111476602600875242}
   m_Layer: 0
   m_Name: EnemyCar #1
   m_TagString: Enemy
@@ -547,11 +584,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 777081188819671294}
-  - {fileID: 9133318061487650653}
-  - {fileID: 1808401841062419558}
-  - {fileID: 4922338119116249600}
-  - {fileID: 8254002928550452870}
+  - {fileID: 8547571364241651544}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &653196502722665883
@@ -590,3 +623,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 3, z: 13}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &3111476602600875242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8506561911587937750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cde2253900ab0e49857f1f262a68529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BouncingEffect
+  objectToBounce: {fileID: 8547571364241651544}
+  jumpHeight: 2
+  jumpDuration: 0.2
+  easeType: 6
+  playOnStart: 1

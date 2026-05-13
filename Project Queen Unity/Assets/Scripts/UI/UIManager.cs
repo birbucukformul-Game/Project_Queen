@@ -15,6 +15,12 @@ public class UIManager : MonoBehaviour
     [Header("Girdi Alaný")]
     [SerializeField] private TMP_InputField nameInputField;
 
+    [Tooltip("Game Over panelinde mevcut skoru gösterecek metin")]
+    [SerializeField] private TextMeshProUGUI gameOverScoreText;
+
+    [Tooltip("Challenge modu aktifse görünecek x2 simgesi")]
+    [SerializeField] private GameObject x2MultiplierIcon;
+
     private bool isPaused = false;
     private bool isGameOver = false;
 
@@ -41,12 +47,17 @@ public class UIManager : MonoBehaviour
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
         if (pausePanel != null) pausePanel.SetActive(false);
         if (nameInputPanel != null) nameInputPanel.SetActive(false);
+
+        bool isChallengeMode = PlayerPrefs.GetInt("ChallengeMode", 0) == 1;
+
         if (scoreText != null)
         {
-            if (PlayerPrefs.GetInt("ChallengeMode", 0) == 1)
-                scoreText.color = Color.red;
-            else
-                scoreText.color = Color.white;
+            scoreText.color = isChallengeMode ? Color.red : Color.white;
+        }
+
+        if (x2MultiplierIcon != null)
+        {
+            x2MultiplierIcon.SetActive(isChallengeMode);
         }
 
         UpdateScoreUI(0);
@@ -61,6 +72,15 @@ public class UIManager : MonoBehaviour
     {
         isGameOver = true;
         if (gameOverPanel != null) gameOverPanel.SetActive(true);
+
+        if (gameOverScoreText != null)
+        {
+            GameManager gm = FindFirstObjectByType<GameManager>();
+            if (gm != null)
+            {
+                gameOverScoreText.text = "Score: " + gm.GetCurrentScore().ToString();
+            }
+        }
 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;

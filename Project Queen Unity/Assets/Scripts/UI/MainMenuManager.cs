@@ -51,9 +51,10 @@ public class MainMenuManager : MonoBehaviour
     {
         if (nameInputPanel != null) nameInputPanel.SetActive(true);
         if (startButton != null) startButton.SetActive(false);
+
         if (challengeModeToggle != null)
         {
-            challengeModeToggle.isOn = false;
+            challengeModeToggle.isOn = PlayerPrefs.GetInt("ChallengeMode", 0) == 1;
         }
 
         if (nameInputField != null) nameInputField.Select();

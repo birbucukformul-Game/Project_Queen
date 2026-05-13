@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 140021235508544170}
   - component: {fileID: 3758686630240880943}
   - component: {fileID: 1193195580327797318}
+  - component: {fileID: 9119494008909529763}
   m_Layer: 0
   m_Name: EnemyCar #15
   m_TagString: Enemy
@@ -211,6 +212,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &9119494008909529763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5418822456582770383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cde2253900ab0e49857f1f262a68529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BouncingEffect
+  objectToBounce: {fileID: 8049748751424499934}
+  jumpHeight: 0.5
+  jumpDuration: 0.2
+  easeType: 6
+  playOnStart: 1
 --- !u!1 &5715031853209507533
 GameObject:
   m_ObjectHideFlags: 0

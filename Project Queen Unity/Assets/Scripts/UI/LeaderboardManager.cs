@@ -41,7 +41,19 @@ public class LeaderboardManager : MonoBehaviour
         string currentName = PlayerPrefs.GetString("CurrentPlayerName", "Oyuncu");
 
         LeaderboardData data = LoadLeaderboard();
-        data.scores.Add(new ScoreEntry { playerName = currentName, score = finalScore });
+        ScoreEntry existingEntry = data.scores.FirstOrDefault(s => s.playerName == currentName);
+
+        if (existingEntry != null)
+        {
+            if (finalScore > existingEntry.score)
+            {
+                existingEntry.score = finalScore;
+            }
+        }
+        else
+        {
+            data.scores.Add(new ScoreEntry { playerName = currentName, score = finalScore });
+        }
 
         data.scores = data.scores.OrderByDescending(s => s.score).Take(maxEntryCount).ToList();
 

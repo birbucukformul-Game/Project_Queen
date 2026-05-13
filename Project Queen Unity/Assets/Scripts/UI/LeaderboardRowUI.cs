@@ -11,6 +11,6 @@ public class LeaderboardRowUI : MonoBehaviour
     {
         rankText.text = $"{rank}.";
         nameText.text = playerName;
-        scoreText.text = $"- {score} Puan";
+        scoreText.text = $"{score} Points";
     }
 }

@@ -13,15 +13,15 @@ public class DifficultyManager : MonoBehaviour
 
     [Header("Challenge Mode Settings")]
     [Tooltip("Zorluðun ne kadar sürede bir artacaðý. 5f yerine 2f yaparsan oyun çok daha hýzlý zorlaþýr.")]
-    [SerializeField] private float challengeIncreaseInterval = 2.5f;
+    [SerializeField] private float challengeIncreaseInterval = 2f;
     [SerializeField] private float challengeStartingSpeedMultiplier = 1.5f;
     [SerializeField] private float challengeStartingSpawnInterval = 1.5f;
 
     [Header("Shared Limits (Ortak Limitler)")]
     [SerializeField] private float speedIncreaseAmount = 0.2f;
-    [SerializeField] private float maxSpeedMultiplier = 4f;
+    [SerializeField] private float maxSpeedMultiplier = 10f;
     [SerializeField] private float spawnIntervalDecreaseAmount = 0.15f;
-    [SerializeField] private float minSpawnInterval = 0.5f;
+    [SerializeField] private float minSpawnInterval = 0.2f;
 
     private float currentSpeedMultiplier;
     private float currentSpawnInterval;
