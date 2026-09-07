@@ -28,8 +28,6 @@ public class TimerUI : MonoBehaviour
         int seconds = Mathf.FloorToInt(timeInSeconds % 60F);
         int milliseconds = Mathf.FloorToInt((timeInSeconds * 1000F) % 1000F);
 
-        // OPTİMİZASYON: string.Format bile mobilde saniyede 60 kez çağrılırsa çöp(GC) yaratır.
-        // TMP'nin SetText'i, string oluşturmadan sayıyı doğrudan ekrana gömer. 0 çöp üretir!
         timeText.SetText("{0:00}:{1:00}.{2:000}", minutes, seconds, milliseconds);
     }
 }

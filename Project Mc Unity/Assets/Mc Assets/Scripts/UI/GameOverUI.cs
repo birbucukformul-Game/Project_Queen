@@ -54,7 +54,7 @@ public class GameOverUI : MonoBehaviour
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);
-            if (titleText != null) titleText.text = "YARIŞ TAMAMLANDI!";
+            if (titleText != null) titleText.text = "RACE COMPLETED!";
         }
 
         PlacementUI placementUI = Object.FindFirstObjectByType<PlacementUI>();
@@ -63,7 +63,7 @@ public class GameOverUI : MonoBehaviour
             TextMeshProUGUI livePlacementText = placementUI.GetComponentInChildren<TextMeshProUGUI>();
             if (livePlacementText != null)
             {
-                rankText.text = $"Sıralamanız: {livePlacementText.text}";
+                rankText.text = $"Placement: {livePlacementText.text}";
             }
         }
 
@@ -82,8 +82,8 @@ public class GameOverUI : MonoBehaviour
                 PlayerPrefs.Save();
             }
 
-            if (currentTimeText != null) currentTimeText.text = $"Süreniz: {FormatTime(finalTime)}";
-            if (bestTimeText != null) bestTimeText.text = $"En İyi Süre: {FormatTime(bestTime)}";
+            if (currentTimeText != null) currentTimeText.text = $"FinalTime: {FormatTime(finalTime)}";
+            if (bestTimeText != null) bestTimeText.text = $"BestTime: {FormatTime(bestTime)}";
         }
     }
 

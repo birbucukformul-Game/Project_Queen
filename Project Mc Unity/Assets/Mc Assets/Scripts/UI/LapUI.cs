@@ -40,6 +40,6 @@ public class LapUI : MonoBehaviour
         int currentDisplayLap = completedLaps + 1;
 
         currentDisplayLap = Mathf.Clamp(currentDisplayLap, 1, totalLaps);
-        lapText.text = $"Tur {currentDisplayLap}/{totalLaps}";
+        lapText.text = $"Laps {currentDisplayLap}/{totalLaps}";
     }
 }

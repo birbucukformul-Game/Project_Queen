@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3b9998e8be47f4d838516cad5f8b3d, type: 3}
   m_Name: COLOR 2
   m_EditorClassIdentifier: Assembly-CSharp::CarSkinData
-  isCustomDesign: 1
-  normalMaterial: {fileID: 2100000, guid: 7a10149fcfb1b2d4d94b0f16e42f195d, type: 2}
+  isCustomDesign: 0
+  normalMaterial: {fileID: 2100000, guid: df667c5f45b9cdb48a5c88ee0a0b9da2, type: 2}
   customPartMaterials: []
